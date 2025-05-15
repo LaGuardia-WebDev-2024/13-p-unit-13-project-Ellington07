@@ -1,9 +1,9 @@
 <!-- Unit 13 Project
 Requirements
-[  ] Two Interactive Drop-down Inputs 
-[  ] Two Different jQuery Animation Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ yes gang ] Two Interactive Drop-down Inputs 
+[ 2 gang ] Two Different jQuery Animation Methods 
+[ 6 gang ] Add Five CSS Declarations
+[ yes gang ] Include Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Google Font
@@ -20,18 +20,42 @@ Select ONE Additional Feature to Add
     <title>Unit 13 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
+  <style>
+    
+    h1:hover {
+      background-color: rgb(255, 0, 0)
+    }
+    
+    h1 {
+      color: rgb(12, 189, 0);
+    }
+    label {
+      color: rgb(159, 0, 175);
+      background-color: rgb(255, 255, 255);
+    }
+    button {
+      color: rgb(175, 0, 5);
+    }
+    select {
+      color: rgb(255, 180, 79);
+      background-color: rgb(0, 106, 146);
+    }
+    html {
+      background-image: url(" https://media.istockphoto.com/id/1150933103/vector/abstract-seamless-pattern-with-holographic-wavy-design-polar-lights-futuristic-digital.jpg?s=612x612&w=0&k=20&c=yG72-MeBsJj1kTXPG8fIM37IFSYPNAkPEWLnDTWxUnY= ");
+    }
+  </style>
   <body>
     <h1>Quiz About [Me]</h1>
     <hr />
     <!-- Movie Question -->
     <form id="movie-form">
       <label>
-        🎥 What is my favorite movie?
+        🎥 What is my favorite Hobbies?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="movie1">TV with fam</option>
+          <option value="movie2">Reading</option>
+          <option value="movie3">Dancing</option>
+          <option value="movie4">Video games</option>
         </select>
       </label>
       <button type="submit">Check Movie Answer</button>
@@ -41,19 +65,62 @@ Select ONE Additional Feature to Add
     <!-- Book Question -->
     <form id="book-form">
       <label>
-        📖 What is my favorite book?
+        📖 What is my favorite book series
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="book1">Arc of a Scythe</option>
+          <option value="book2">Wings of fire</option>
+          <option value="book3">Wizaerd of earthsea</option>
+          <option value="book4">Direy of a wimpy kid</option>
         </select>
       </label>
       <button type="submit">Check Book Answer</button>
     </form>
     <div id="book-result"></div>
+     <img
+      src=" https://media.posterlounge.com/img/products/700000/696617/696617_poster.jpg "
+      width="200:"
+    />
+    <img
+      src=" https://media.posterlounge.com/img/products/700000/696617/696617_poster.jpg "
+      width="200:"
+    />
+    <img
+      src=" https://media.posterlounge.com/img/products/700000/696617/696617_poster.jpg "
+      width="200:"
+    />
+    <img
+      src=" https://i.pinimg.com/564x/dc/dd/fc/dcddfc520b7e9c628e93141552375004.jpg "
+      width="200"
+    />
+    <img
+      src=" https://i.pinimg.com/564x/dc/dd/fc/dcddfc520b7e9c628e93141552375004.jpg "
+      width="200"
+    />
+    <img
+      src=" https://i.pinimg.com/564x/dc/dd/fc/dcddfc520b7e9c628e93141552375004.jpg "
+      width="200"
+    />
+    <img
+      src="https://as1.ftcdn.net/jpg/05/81/61/50/1000_F_581615007_63V2VGPoKPUOGfSNnoB637Q4bWe9bryl.jpg"
+      width="200"
+    />
+    <img
+      src="https://as1.ftcdn.net/jpg/05/81/61/50/1000_F_581615007_63V2VGPoKPUOGfSNnoB637Q4bWe9bryl.jpg"
+      width="200"
+    />
+    <img
+      src="https://as1.ftcdn.net/jpg/05/81/61/50/1000_F_581615007_63V2VGPoKPUOGfSNnoB637Q4bWe9bryl.jpg"
+      width="200"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+      
+      $(" h1 ").hide();
+      $(" h1 ").slideDown(2000);
+      
+      $("img").hide();
+      $("img").fadeIn();
+      
       //Movie Question jQuery Code
       $("#movie-form").on("submit", function (event) {
         event.preventDefault();
@@ -82,6 +149,7 @@ Select ONE Additional Feature to Add
         }
       });
     </script>
+   
   </body>
 
   <!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery-->
